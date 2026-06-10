@@ -1,0 +1,16 @@
+{
+  "name": "ndjson-audit-stream-pipeline",
+  "version": "1.0.0",
+  "description": "Streaming NDJSON audit-log normalisation pipeline for Utkrusht assessment events",
+  "type": "commonjs",
+  "main": "src/pipeline/processAuditLog.js",
+  "scripts": {
+    "test": "node --test tests/pipeline.test.js",
+    "test:verbose": "node --test --test-reporter=spec tests/pipeline.test.js",
+    "smoke": "node scripts/generateFixture.js && node scripts/smokeTest.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {}
+}
